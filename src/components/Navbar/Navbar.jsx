@@ -78,98 +78,6 @@ const Navbar = ({ navbarBg }) => {
                 Contact Us
                 </span>
             </Link>
-
-
-          {/* <div
-            className="relative group"
-            onMouseEnter={() => setIsAutomationOpen(true)}
-            onMouseLeave={() => setIsAutomationOpen(false)}
-          >
-            <button className="text-primary hover:text-secondary">
-              Automation
-            </button>
-            {isAutomationOpen && (
-              <div className="absolute w-[14rem] -left-16 mt- bg-[#0e1837] bg-opacity-55 text-primary shadow-lg rounded-2xl p-2 justify-center text-center">
-                <ul>
-                  <li className="hover:bg-gray-700 text-primary p-2 rounded-2xl">
-                    <Link to="/smartlighting">Home Lighting</Link>
-                  </li>
-                  <li className="hover:bg-gray-700 p-2 rounded-2xl">
-                    <Link to="/homesecurity">Home Security</Link>
-                  </li>
-                  <li className="hover:bg-gray-700 p-2 rounded-2xl">
-                    <Link to="/interactivehome">Interactive Home</Link>
-                  </li>
-                  <li className="hover:bg-gray-700 p-2 rounded-2xl">
-                    <Link to="/multimedia">Multimedia</Link>
-                  </li>
-                  <li className="hover:bg-gray-700 p-2 rounded-2xl">
-                    <Link to="/protection">Protection</Link>
-                  </li>
-                  <li className="hover:bg-gray-700 p-2 rounded-2xl">
-                    <Link to="/climate">Climate</Link>
-                  </li>
-                  <li className="hover:bg-gray-700 p-2 rounded-2xl">
-                    <Link to="/surveillance">Surveillance</Link>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div> */}
-          {/* <div
-            className="relative group"
-            onMouseEnter={() => setIsServiceOpen(true)}
-            onMouseLeave={() => setIsServiceOpen(false)}
-          >
-            <button className="text-primary hover:text-secondary">
-              Services
-            </button>
-            {isServiceOpen && (
-              <div className="absolute w-[14rem] -left-16 mt- bg-[#0e1837] bg-opacity-55 text-primary shadow-lg rounded-2xl p-2 justify-center text-center">
-                <ul>
-                  <li className="hover:bg-gray-700 text-primary p-2 rounded-2xl">
-                    <Link to="/lighting">Industrial Automation</Link>
-                  </li>
-                  <li className="hover:bg-gray-700 p-2 rounded-2xl">
-                    <Link to="/home-security">IT Solutions</Link>
-                  </li>
-                  <li className="hover:bg-gray-700 p-2 rounded-2xl">
-                    <Link to="/interactive-home">Electrical Work</Link>
-                  </li>
-                  <li className="hover:bg-gray-700 p-2 rounded-2xl">
-                    <Link to="/multimedia">Electrical Starter Panels</Link>
-                  </li>
-                  <li className="hover:bg-gray-700 p-2 rounded-2xl">
-                    <Link to="/protection">Ventilation Systems with PLC</Link>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div> */}
-          {/* <div
-            className="relative group"
-            onMouseEnter={() => setIsChargesOpen(true)}
-            onMouseLeave={() => setIsChargesOpen(false)}
-          >
-            <button className="text-primary hover:text-secondary">
-              Maintenance Charges
-            </button>
-            {isChargesOpen && (
-              <div className="absolute w-[14rem] -left-7 mt- bg-[#0e1837] bg-opacity-55 text-primary shadow-lg rounded-2xl p-2 justify-center text-center">
-                <ul>
-                  <li className="hover:bg-gray-700 text-primary p-2 rounded-2xl">
-                    <Link to="/smartlighting">Electrical Maintenance AMC's</Link>
-                  </li>
-                  <li className="hover:bg-gray-700 p-2 rounded-2xl">
-                    <Link to="/homesecurity">Automation Panel AMC's</Link>
-                  </li>
-                  <li className="hover:bg-gray-700 p-2 rounded-2xl">
-                    <Link to="/interactive-home">Weighing Scales AMC's</Link>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div>*/}
         </div> 
         <div className="flex items-center">
           <button className="border poppins-regular border-[#ffff] text-sm bg-primary hidden lg:block text-black w-[8rem] h-[3rem] rounded-[1.5rem] cursor-pointer hover:text-white hover:bg-zinc-400 hover:scale-110 transition-transform duration-700">
@@ -217,7 +125,7 @@ const Navbar = ({ navbarBg }) => {
         </div>
       </div>
       {isOpen && (
-        <div className="lg:hidden bg-gray-900 bg-opacity-50 backdrop-blur px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="lg:hidden bg-gray-900 h-auto bg-opacity-50 backdrop-blur px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
             to="/"
             onClick={handleLinkClick}
@@ -231,124 +139,21 @@ const Navbar = ({ navbarBg }) => {
             className="block px-4 py-4 text-primary hover:text-[#f5ce02]"
           >
             About Us
-          </Link>
-          <div className="relative">
-            <button
-              onClick={handleAutomationClick}
-              className="block px-4 py-4 text-primary w-full text-left"
-            >
-              Automation
-            </button>
-            {isAutomationOpen && (
-              <div className="pl-4 text-primary">
-                <ul>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/smartlighting" onClick={handleLinkClick}>
-                      Home Lighting
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/homesecurity" onClick={handleLinkClick}>
-                      Home Security
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/interactivehome" onClick={handleLinkClick}>
-                      Interactive Home
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/multimedia" onClick={handleLinkClick}>
-                      Multimedia
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/protection" onClick={handleLinkClick}>
-                      Protection
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/climate" onClick={handleLinkClick}>
-                      Climate
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/surveillance" onClick={handleLinkClick}>
-                      Surveillance
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div>
-          <div className="relative">
-            <button
-              onClick={handleServiceClick}
-              className="block px-4 py-4 text-primary w-full text-left"
-            >
-              Services
-            </button>
-            {isServiceOpen && (
-              <div className="pl-4 text-primary">
-                <ul>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/lighting" onClick={handleLinkClick}>
-                      Industrial Automation
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/home-security" onClick={handleLinkClick}>
-                      IT Solutions
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/interactive-home" onClick={handleLinkClick}>
-                      Electrical Work
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/multimedia" onClick={handleLinkClick}>
-                      Electrical Starter Panels
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/protection" onClick={handleLinkClick}>
-                      Ventilation Systems with PLC
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div>
-          <div className="relative">
-            <button
-              onClick={handleChargesClick}
-              className="block px-4 py-4 text-primary w-full text-left"
-            >
-              Maintenance Charges
-            </button>
-            {isChargesOpen && (
-              <div className="pl-4 text-primary">
-                <ul>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/smartlighting" onClick={handleLinkClick}>
-                      Electrical Maintenance AMC's
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/homesecurity" onClick={handleLinkClick}>
-                      Automation Panel AMC's
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-500 p-2 rounded-2xl">
-                    <Link to="/interactive-home" onClick={handleLinkClick}>
-                      Weighing Scales AMC's
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div>
+          </Link> 
+          <Link
+            to="/about"
+            onClick={handleLinkClick}
+            className="block px-4 py-4 text-primary hover:text-[#f5ce02]"
+          >
+            Services
+          </Link> 
+          <Link
+            to="/about"
+            onClick={handleLinkClick}
+            className="block px-4 py-4 text-primary hover:text-[#f5ce02]"
+          >
+            Contact Us
+          </Link> 
         </div>
       )}
     </nav>
