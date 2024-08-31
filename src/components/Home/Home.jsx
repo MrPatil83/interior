@@ -13,7 +13,7 @@ const Home = () => {
             <div
              className="w-screen">
               <motion.img
-               variants={FadeFront(0.2)}
+               variants={FadeFront(-0.1)}
                initial="hidden"
                whileInView={"visible"}
               //  whileHover={{ scale: 1.07 }}
