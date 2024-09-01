@@ -1,4 +1,4 @@
-// import React from 'react'
+import { useState, useEffect } from 'react';
 import HomeImage from "../../assests/HomeCarosulImage/HomeImage.png";
 import sofa from "../../assests/HeroImages/sofa.jpg";
 import bedroom from "../../assests/HeroImages/bedroom.png";
@@ -18,6 +18,28 @@ import { FadeFront, FadeUp, FadeRight, FadeLeft } from "../../utils/Animation";
 import Testomonial from "../Testomonial/Testomonial";
 
 const Home = () => {
+  const [currentImage, setCurrentImage] = useState(HomeImage);
+
+  useEffect(() => {
+    const updateImage = () => {
+      if (window.innerWidth < 768) {
+        setCurrentImage(Tallimge);
+      } else {
+        setCurrentImage(HomeImage);
+      }
+    };
+
+    // Call the function on initial render
+    updateImage();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', updateImage);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', updateImage);
+    };
+  }, []);
   const whatCanItems = [
     {
       id: 1,
@@ -78,13 +100,12 @@ const Home = () => {
   return (
     <section className=" -mt-24 overflow-hidden">
       <div className="w-screen">
-        <motion.img
+      <motion.img
           variants={FadeFront(-0.1)}
           initial="hidden"
           whileInView={"visible"}
-          //  whileHover={{ scale: 1.07 }}
-          className=" w-screen h-[calc(44vh)] md:h-[calc(70vh)]  lg:h-[calc(60vh)] xl:h-[calc(100vh)] object-cover bg-center"
-          src={HomeImage}
+          className=" w-screen h-full md:h-[calc(70vh)]  lg:h-[calc(60vh)] xl:h-[calc(100vh)] object-cover bg-center"
+          src={currentImage} // Use the state variable here
           alt=""
         ></motion.img>
       </div>
@@ -93,7 +114,7 @@ const Home = () => {
           variants={FadeUp(0.1)}
           initial="hidden"
           whileInView={"visible"}
-          className=" text-slate-600 font-semibold poppins-regular -ml-[14rem] text-xl mx-auto -mt-24  py-4  md:text-3xl md:w-screen md:-mx-4 lg:text-4xl lg:-mt-[30rem] lg:-mx-3 xl:text-5xl xl:-mx-4 xl:mt-1"
+          className=" text-slate-600 font-semibold poppins-regular -ml-[15rem] text-[2rem] mx-auto -mt-[17rem]  py-4  md:text-3xl md:w-screen md:-mx-4 lg:text-4xl lg:-mt-[30rem] lg:-mx-3 xl:text-5xl xl:-mx-4 xl:mt-1"
         >
           Bringing
           nature home
@@ -102,7 +123,7 @@ const Home = () => {
           variants={FadeUp(0.1)}
           initial="hidden"
           whileInView={"visible"}
-          className="text-sm mx-auto -ml-[15rem] flex lg:px-10 text-zinc-500  md:poppins-regular md:w-screen md:-mx-14 md:text-xl  lg:text-xl lg:w-screen lg:-mb-14 xl:w-auto xl:ml-4"
+          className="text-base mx-auto -ml-[15rem] flex lg:px-10 text-zinc-500  md:poppins-regular md:w-screen md:-mx-14 md:text-xl  lg:text-xl lg:w-screen lg:-mb-14 xl:w-auto xl:ml-4"
         >
           "By embracing "Bringing Nature Home," interior spaces not only reflect a contemporary aesthetic but also promote well-being, sustainability, and a deeper appreciation for the beauty and serenity found in the natural world.."
         </motion.p>
