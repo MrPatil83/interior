@@ -55,7 +55,7 @@ const Navbar = ({ navbarBg }) => {
                 </span>
             </Link>
             <Link 
-                to="/about" 
+                to="/aboutus" 
                 className="relative text-primary group hover:text-secondary transition-colors duration-300"
             >
                 <span className="group-hover:before:scale-x-100 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-zinc-400  before:scale-x-0 before:origin-left before:transition-transform before:duration-700 before:ease-in-out">
@@ -63,7 +63,7 @@ const Navbar = ({ navbarBg }) => {
                 </span>
             </Link>
             <Link 
-                to="/services" 
+                to="/service" 
                 className="relative text-primary group hover:text-secondary transition-colors duration-300"
             >
                 <span className="group-hover:before:scale-x-100 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-zinc-400  before:scale-x-0 before:origin-left before:transition-transform before:duration-700 before:ease-in-out">
@@ -134,21 +134,21 @@ const Navbar = ({ navbarBg }) => {
             Home
           </Link>
           <Link
-            to="/about"
+            to="/aboutus"
             onClick={handleLinkClick}
             className="block px-4 py-4 text-primary hover:text-[#f5ce02]"
           >
             About Us
           </Link> 
           <Link
-            to="/about"
+            to="/service"
             onClick={handleLinkClick}
             className="block px-4 py-4 text-primary hover:text-[#f5ce02]"
           >
             Services
           </Link> 
           <Link
-            to="/about"
+            to="/contact"
             onClick={handleLinkClick}
             className="block px-4 py-4 text-primary hover:text-[#f5ce02]"
           >

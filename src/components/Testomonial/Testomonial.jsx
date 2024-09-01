@@ -124,7 +124,7 @@ const Testimonials = ({ cards }) => {
   }, [cards.length]);
 
   return (
-    <section className=" laptop:mx-24 my-10 h-[80vh]  px-24  pt-9  pb-[25rem]   laptop:h-[40rem] flex flex-col justify-between rounded-br-full bg-stone-900 text-white">
+    <section className=" my-10 h-[80vh]  px-24  pt-9  pb-[25rem] lg:h-[75vh] flex flex-col justify-between rounded-br-full bg-stone-900 text-white">
       <motion.h1
       variants={FadeRight(0.2)}
       initial="hidden"
