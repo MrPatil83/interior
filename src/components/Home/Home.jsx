@@ -93,7 +93,7 @@ const Home = () => {
           variants={FadeUp(0.1)}
           initial="hidden"
           whileInView={"visible"}
-          className=" text-slate-600 font-semibold poppins-regular -ml-[14rem] text-xl mx-auto  mt-[10rem] py-8 md:text-3xl md:w-screen lg:text-4xl lg:-mt-[30rem]"
+          className=" text-slate-600 font-semibold poppins-regular -ml-[14rem] text-xl mx-auto -mt-24  py-4  md:text-3xl md:w-screen md:-mx-4 lg:text-4xl lg:-mt-[30rem] lg:-mx-3 xl:text-5xl xl:-mx-4 xl:mt-1"
         >
           Bringing
           nature home
@@ -102,7 +102,7 @@ const Home = () => {
           variants={FadeUp(0.1)}
           initial="hidden"
           whileInView={"visible"}
-          className="text-2xl poppins-regular text-zinc-500"
+          className="text-sm mx-auto -ml-[15rem] flex lg:px-10 text-zinc-500  md:poppins-regular md:w-screen md:-mx-14 md:text-xl  lg:text-xl lg:w-screen lg:-mb-14 xl:w-auto xl:ml-4"
         >
           "By embracing "Bringing Nature Home," interior spaces not only reflect a contemporary aesthetic but also promote well-being, sustainability, and a deeper appreciation for the beauty and serenity found in the natural world.."
         </motion.p>
@@ -113,13 +113,13 @@ const Home = () => {
         variants={FadeFront(0.3)}
         initial="hidden"
         whileInView={"visible"}
-        className=" grid grid-cols-2 -mt-10  w-screen p-10 bg-zinc-500 rounded-ss-full"
+        className=" grid lg:grid-cols-2 -mt-14  w-screen p-10 bg-zinc-500 rounded-ss-full"
       >
         <motion.img
           variants={FadeRight(0.2)}
           initial="hidden"
           whileInView={"visible"}
-          className=" h-[40rem] ml-14 w-screen rounded-[3rem] "
+          className=" h-[20rem] mx-auto ml-1 py-3 w-screen rounded-[3rem] md:h-[27rem] md:mx-14 md:py-2 md:w-[35rem] lg:h-[37rem] lg:w-[27rem] xl:h-[44rem] xl:mx-[9rem]  xl:w-[90%]"
           src={sofa}
           alt=""
         ></motion.img>
@@ -130,13 +130,13 @@ const Home = () => {
           className=" flex  flex-col-reverse gap-2 justify-center items-center"
         >
           <img
-            className=" h-[20rem]  w-[30rem]  rounded-[3rem]"
+            className=" h-[20rem]  w-[30rem]  rounded-[3rem] lg:h-[17rem] lg:w-[25rem]  xl:h-[20rem]  xl:w-[30rem]"
             src={bedroom}
             alt=""
           />
 
           <img
-            className=" h-[20rem] w-[30rem]  rounded-[3rem]"
+            className=" h-[20rem] w-[30rem]  rounded-[3rem] lg:h-[17rem] lg:w-[25rem] xl:h-[20rem] xl:w-[30rem]"
             src={Tvunit}
             alt=""
           />
@@ -144,13 +144,13 @@ const Home = () => {
       </motion.div>
 
       {/* part second */}
-      <div className=" grid grid-cols-2 gap-32 h-[100vh] items-center">
+      <div className=" grid mx-auto md:grid-cols-2 gap-32 h-[100vh] items-center">
         <div>
           <motion.h2
             variants={FadeUp(0.2)}
             initial="hidden"
             whileInView={"visible"}
-            className=" text-5xl text-zinc-600 py-4 poppins-regular justify-center flex ml-[10rem]"
+            className=" text-2xl mx-auto -ml-1 text-zinc-600 pt-10 poppins-regular justify-center flex md:text-2xl md:mx-auto md:ml-10 md:w-full lg:text-[2.30rem] lg:ml-[6rem] xl:ml-[2.8rem] "
           >
             Elegance in Interior Design.
           </motion.h2>
@@ -159,7 +159,7 @@ const Home = () => {
               variants={FadeRight(0.3)}
               initial="hidden"
               whileInView={"visible"}
-              className=" text-xl justify-center text-slate-500 flex ml-[10rem]"
+              className=" text-base mx-auto justify-center py-2 text-slate-500 flex px-10  md:text-base md:mx-auto md:ml-4 lg:text-base lg:ml-14 xl:text-xl xl:ml-[8rem]"
             >
               Elegance in Interior Design captures the essence of sophisticated,
               timeless decor. Explore modern home interior design ideas and
@@ -169,7 +169,7 @@ const Home = () => {
               //  variants={FadeRight(-0.2)}
               //  initial="hidden"
               //  whileInView={"visible"}
-              className=" text-sm poppins-regular h-[2.9rem] w-[8rem] items-center rounded-[2rem] flex ml-[10rem] m-4 justify-center border border-black hover:text-white hover:bg-zinc-400 hover:scale-110 transition-transform duration-700 "
+              className=" text-sm poppins-regular h-[2.9rem] w-[8rem] items-center rounded-[2rem] flex  m-2 mx-auto ml-9 md:h-[2.5rem] md:w-[7rem] md:mx-auto md:ml-[3.4rem] lg:h-[2.5rem] lg:w-[7rem] lg:ml-[6rem] xl:ml-[10rem] justify-center border border-black hover:text-white hover:bg-zinc-400 hover:scale-110 transition-transform duration-700 "
             >
               GET A QUOTE
             </motion.button>
@@ -179,25 +179,25 @@ const Home = () => {
           variants={FadeLeft(0.3)}
           initial="hidden"
           whileInView={"visible"}
-          className=" h-[40rem] w-[30rem] rounded-3xl ml-10 mt-24"
+          className=" h-[26rem] w-[20rem] -mt-24  rounded-3xl mx-auto md:h-[28rem] md:w-full md:mt-14 md:-mx-14 lg:h-[40rem] lg:w-[30rem] flex lg:-mx-10"
           src={Tallimge}
           alt=""
         ></motion.img>
       </div>
 
       {/* third part  */}
-      <section className=" flex flex-cols-3 justify-around h-[75rem] mt-24 bg-stone-900 rounded-se-full">
+      <section className=" flex flex-cols-3 justify-around h-[210rem] lg:h-[73rem] mx-auto md:h-[117rem]  mt-24 bg-stone-900 rounded-se-full">
         <div className=" ">
           <motion.div
             variants={FadeUp(0.2)}
             initial="hidden"
             whileInView={"visible"}
-            className="text-4xl poppins-regular text-zinc-500 mb-4 py-10"
+            className=" poppins-regular mx-auto px-10 text-zinc-500 mb-4 py-10 text-[2rem] md:text-3xl md:pl-4 lg:text-4xl"
           >
             <span className=" text-slate-500">What you can do in</span>{" "}
             STEADLERS & SCALES
           </motion.div>
-          <div className="what_can_items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {whatCanItems.map((item) => (
               <div key={item.id} className="" data-id={item.id}>
                 <motion.div
@@ -216,7 +216,7 @@ const Home = () => {
                     src={item.imgSrc}
                     width="300px"
                     height="300px"
-                    className=" rounded-3xl cursor-pointer"
+                    className=" rounded-3xl cursor-pointer flex mx-auto"
                     alt={item.alt}
                   ></motion.img>
                 </picture>
