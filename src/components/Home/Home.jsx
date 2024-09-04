@@ -101,7 +101,7 @@ const Home = () => {
     <section className=" -mt-24 overflow-hidden">
       <div className="w-screen">
       <motion.img
-          variants={FadeFront(-0.1)}
+          variants={FadeFront(0.1)}
           initial="hidden"
           whileInView={"visible"}
           className=" w-screen h-full md:h-[calc(70vh)]  lg:h-[calc(60vh)] xl:h-[calc(100vh)] object-cover bg-center"
@@ -134,7 +134,7 @@ const Home = () => {
         variants={FadeFront(0.3)}
         initial="hidden"
         whileInView={"visible"}
-        className=" grid lg:grid-cols-2 -mt-14  w-screen p-10 bg-zinc-500 rounded-ss-full"
+        className=" grid lg:grid-cols-2 -mt-14  w-screen p-10 bg-stone-900 rounded-ss-full"
       >
         <motion.img
           variants={FadeRight(0.2)}

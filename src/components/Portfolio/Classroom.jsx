@@ -1,11 +1,11 @@
 // import React from 'react'
 
-const Service = () => {
+const Classroom = () => {
   return (
     <div>
-      Service Page
+        Classroom
     </div>
   )
 }
 
-export default Service
+export default Classroom
