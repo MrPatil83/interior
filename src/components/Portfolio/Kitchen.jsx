@@ -133,6 +133,8 @@ import image6 from "../../assests/Kitchen/Thumbnils/image6.webp";
 import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import { FadeFront, FadeUp, FadeRight } from "../../utils/Animation";
+import KtchenParallex from "../Parallesx/KtchenParallex";
+
 
 const Kitchen = () => {
   const [featuredImage, setFeaturedImage] = useState({
@@ -253,20 +255,19 @@ const Kitchen = () => {
           </motion.p>
         </div>
       </div>
-
       {/* Section: Sleek and Modern Kitchen Remodel */}
       <motion.div
       variants={FadeFront(1)}
       initial="hidden"
       whileInView={"visible"}
-       className="sample-row py-6 bg-zinc-800 rounded-bl-full">
+       className="sample-row py-6 bg-zinc-800 rounded-br-full">
         <div className="col-12">
           <motion.h2
           variants={FadeUp(0.8)}
           initial="hidden"
           whileInView={"visible"}
            className="text-[1.30rem] md:text-4xl lg:text-5xl text-slate-500 xl:py-14 flex justify-center poppins-extralight">Sleek and Modern Kitchen Remodel</motion.h2>
-          
+          {/* last image component */}
           <div className="portfolio-piece-container mt-4 md:mx-5 lg:mx-0">
             <img 
               className="h-[20rem] px-10 md:h-[40rem] md:mb-14 mx-auto py-4 xl:w-[75rem] xl:h-[60rem] xl:mx-[10rem] opacity-55 hover:opacity-100 object-cover" 
@@ -277,9 +278,9 @@ const Kitchen = () => {
           </div>
         </div>
       </motion.div>
-      
     </article>
-    </section>
+    <KtchenParallex/>
+  </section>
   );
 };
 

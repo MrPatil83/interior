@@ -1,0 +1,27 @@
+/* ParallaxSection.css */
+.parallax-bg {
+  position: relative;
+  height: 100vh;
+  background-image: url('../../assests//Kitchen//Parallex//kitchenparallex.jpg'); /* Replace with your image URL */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateZ(10);
+  z-index: -1;
+}.parallax-bgsecond{
+  position: relative;
+  height: 100vh;
+  background-image: url('../../assests//Kitchen//Parallex/parallex2webp.webp'); /* Replace with your image URL */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateZ(10);
+  z-index: -1;
+}
+
+.parallax-bg h1 {
+  position: relative;
+  z-index: 1;
+}

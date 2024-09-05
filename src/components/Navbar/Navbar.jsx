@@ -289,12 +289,12 @@ const Navbar = ({ navbarBg }) => {
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
-                    <Link to="/bedroom" onClick={handleLinkClick}>
+                    <Link to="/bedroomPage" onClick={handleLinkClick}>
                       Bedroom Area
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
-                    <Link to="/kitchen" onClick={handleLinkClick}>
+                    <Link to="/portfolio/kitchen" onClick={handleLinkClick}>
                     Modern kitchen
                     </Link>
                   </li>
@@ -418,12 +418,12 @@ const Navbar = ({ navbarBg }) => {
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
-                    <Link to="/bedroom" onClick={handleLinkClick}>
+                    <Link to="/bedroomPage" onClick={handleLinkClick}>
                       Bedroom Area
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
-                    <Link to="/kitchen" onClick={handleLinkClick}>
+                    <Link to="/portfolio/kitchen" onClick={handleLinkClick}>
                     Modern kitchen
                     </Link>
                   </li>
