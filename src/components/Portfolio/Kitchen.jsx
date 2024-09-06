@@ -208,7 +208,7 @@ const Kitchen = () => {
           {/* Featured Image */}
           <div className="featured-sample-container mx-auto px-4 md:mx-4 lg:mx-0 mt-4 relative">
             <img 
-              className="h-[15rem] w-[25rem] md:w-[75rem] md:mx-[10rem] border-[1.5rem] mx-auto md:border-[2rem] lg:border-[4rem] border-slate-700 xl:h-[40rem] object-cover" 
+              className="h-[15rem] w-[25rem] md:w-[75rem] md:h-[40rem] md:-ml-4 border-[1.5rem] mx-auto md:border-[2rem] lg:border-[4rem] border-slate-700 xl:h-[40rem] xl:mx-[10rem] object-cover" 
               style={{ aspectRatio: featuredImage.aspectRatio }} 
               alt={featuredImage.alt} 
               src={featuredImage.src}

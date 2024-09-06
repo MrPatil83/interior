@@ -7,9 +7,12 @@ const KtchenParallex = () => {
       {/* Parallax Background */}
       <section className="relative overflow-hidden">
         <div className="parallax-bg opacity-80">
-          <h1 className="absolute top-1/2 left-1/2 mx-1 transform -translate-x-1/2 -translate-y-1/2 text-zinc-200 text-4xl md:text-[3.5rem] poppins-regular text-center">
+          {/* <h1 className="absolute top-1/2 left-1/2 mx-1 transform -translate-x-1/2 -translate-y-1/2 text-zinc-200 text-4xl md:text-[3.5rem] poppins-regular text-center"> */}
+           
+            <h1 className="absolute mx-auto px-10 top-1/2 text-3xl left-1/2 w-full transform -translate-x-1/2 -translate-y-1/2  text-slate-100 md:text-4xl md:text-6xl poppins-regular text-center">
             Why Choose Steadlers & Scales Interior for Your Home?
           </h1>
+          {/* </h1> */}
         </div>
         <div className="relative bg-white py-16">
           <div className="max-w-6xl mx-auto px-4">

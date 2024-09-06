@@ -47,68 +47,233 @@ export const Bedroom = () => {
         variants={FadeUp(0.3)}
         initial="hidden"
         whileInView={"visible"}
-        className=" text-base text-slate-600 mx-[15rem] poppins-light-italic py-8"
+        className=" text-sm max-w-auto m-4 md:text-lg text-slate-600 md:mx-[15rem] poppins-light-italic py-14"
       >
-        "Elevate your bedroom with our exquisite interior design solutions. Our
-        luxury bedroom designs focus on blending comfort and style, creating a
-        relaxing sanctuary tailored to your preferences. Discover top trends in
-        bedroom interior design that incorporate modern aesthetics and
-        functional layouts. Whether you're looking for elegant bedroom decor or
-        innovative space-saving ideas, our expert team ensures your bedroom
-        becomes a serene retreat. Explore our collection of stylish bedroom
-        interiors to transform your space into a true haven."
+        Discover luxury bedroom interiors and custom wardrobes tailored to your
+        style, crafted from premium materials like plywood, glass, and hardwood.
+        Our modern designs maximize storage with smart, space-saving layouts,
+        blending elegance and functionality. Transform your space with bespoke
+        wardrobe systems and sophisticated decor for a stylish, clutter-free
+        look.
       </motion.p>
 
-      <div className=" grid md:grid-cols-3 gap-4 justify-center mx-14">
-        <div className="bg-gradient-to-r from-white via-slate-800 to-white p-[1px] rounded-2xl shadow-lg max-w-xs">
-          <div className="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 p-6 rounded-2xl">
-            <h1 className=" text-2xl text-zinc-100">"Luxury Bedroom Interiors & Wardrobes"</h1>
-            <p className="text-base text-slate-400">
-              Discover luxury bedroom interior designs and high-quality wardrobe
-              solutions tailored to your unique taste. We specialize in modern
-              bedroom interiors that seamlessly integrate custom wardrobe designs
-              crafted from premium materials like plywood, glass, and hardwood.
-              Our expertise in space-saving bedroom ideas and functional wardrobe
-              layouts ensures maximum storage without compromising on style. From
-              elegant bedroom decor to bespoke wardrobe systems, every detail is
-              designed to elevate your space, offering both aesthetic appeal and
-              lasting durability.
-            </p>
-          </div>
-        </div>
-        <div className="bg-gradient-to-r from-white via-slate-800 to-white p-[1px] rounded-2xl shadow-lg max-w-xs">
-          <div className="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 p-6 rounded-2xl">
-            <h1 className=" text-2xl text-zinc-100">"Luxury Bedroom Interiors & Wardrobes"</h1>
-            <p className="text-base text-slate-400">
-              Discover luxury bedroom interior designs and high-quality wardrobe
-              solutions tailored to your unique taste. We specialize in modern
-              bedroom interiors that seamlessly integrate custom wardrobe designs
-              crafted from premium materials like plywood, glass, and hardwood.
-              Our expertise in space-saving bedroom ideas and functional wardrobe
-              layouts ensures maximum storage without compromising on style. From
-              elegant bedroom decor to bespoke wardrobe systems, every detail is
-              designed to elevate your space, offering both aesthetic appeal and
-              lasting durability.
-            </p>
-          </div>
-        </div>
-        <div className="bg-gradient-to-r from-white via-slate-800 to-white p-[1px] rounded-2xl shadow-lg max-w-xs">
-          <div className="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 p-6 rounded-2xl">
-            <h1 className=" text-2xl text-zinc-100">"Luxury Bedroom Interiors & Wardrobes"</h1>
-            <p className="text-base text-slate-400">
-              Discover luxury bedroom interior designs and high-quality wardrobe
-              solutions tailored to your unique taste. We specialize in modern
-              bedroom interiors that seamlessly integrate custom wardrobe designs
-              crafted from premium materials like plywood, glass, and hardwood.
-              Our expertise in space-saving bedroom ideas and functional wardrobe
-              layouts ensures maximum storage without compromising on style. From
-              elegant bedroom decor to bespoke wardrobe systems, every detail is
-              designed to elevate your space, offering both aesthetic appeal and
-              lasting durability.
-            </p>
-          </div>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mx-auto mb-10 px-4 xl:px-[15rem]">
+  <div className="bg-gradient-to-r from-white via-slate-800 to-white p-[1px] rounded-2xl shadow-lg max-w-xs">
+    <div className="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 p-6 rounded-2xl">
+      <h1 className="text-xl font-semibold text-zinc-100 mb-2">Luxury Bedroom Interiors & Wardrobes</h1>
+      <p className="text-sm text-slate-400">
+        Transform your space with luxury bedroom interiors and custom wardrobe solutions designed for style and functionality. Our modern designs feature premium materials like hardwood, glass, and plywood, offering space-saving layouts that maximize storage. Elevate your bedroom with bespoke wardrobes and elegant decor for a clutter-free, sophisticated look.
+      </p>
+    </div>
+  </div>
+
+  <div className="bg-gradient-to-r from-white via-slate-800 to-white p-[1px] rounded-2xl shadow-lg max-w-xs">
+    <div className="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 p-6 rounded-2xl">
+      <h1 className="text-xl font-semibold text-zinc-100 mb-2">Elegant Bedroom Interiors & Smart Storage</h1>
+      <p className="text-sm text-slate-400">
+        Revamp your bedroom with luxury interiors and custom wardrobe solutions, blending style and functionality. Our designs feature premium materials like hardwood, glass, and plywood, offering smart, space-saving layouts to maximize storage. Create a sophisticated, clutter-free sanctuary tailored to your unique taste with bespoke wardrobes and elegant decor.
+      </p>
+    </div>
+  </div>
+
+  <div className="bg-gradient-to-r from-white via-slate-800 to-white p-[1px] rounded-2xl shadow-lg max-w-xs">
+    <div className="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 p-6 rounded-2xl">
+      <h1 className="text-xl font-semibold text-zinc-100 mb-2">Elegant Bedroom Colors & Custom Interiors</h1>
+      <p className="text-sm text-slate-400">
+        Elevate your bedroom with elegant color palettes and tailored interior designs. Our approach combines premium materials and innovative custom solutions to create a harmonious and stylish space. Discover how our bespoke designs and sophisticated color schemes can transform your bedroom into a refined and functional retreat, blending luxury and practicality.
+      </p>
+    </div>
+  </div>
+</div>
+
+{/* image section */}
+<div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-14">
+  {/* first image`` */}
+<div className="p-4 max-w-xs mx-auto">
+      <figure className="relative overflow-hidden rounded-lg">
+        <img
+          alt="Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed"
+          title="Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed"
+          loading="lazy"
+          width="368"
+          height="300"
+          className="w-full h-auto object-cover"
+          // srcSet="
+          //   https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-384 1x,
+          //   https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-768 2x
+          // "
+          src="https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-768"
+        />
+      </figure>
+      <div className="mt-4">
+        <div className="text-center">
+          <a
+            // href="https://www.interiorcompany.com/in/interior-design-ideas/master-bedroom/-modern-master-bedroom-design-with-teal-blue-wall-and-wooden-bed-br-pid-6218"
+            className="text-blue-600 hover:underline"
+          >
+            <h2 className="text-xl font-semibold text-gray-900">
+              Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed
+            </h2>
+          </a>
         </div>
       </div>
+    </div>
+    {/* second */}
+     {/* first image`` */}
+<div className="p-4 max-w-xs mx-auto">
+      <figure className="relative overflow-hidden rounded-lg">
+        <img
+          alt="Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed"
+          title="Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed"
+          loading="lazy"
+          width="368"
+          height="300"
+          className="w-full h-auto object-cover"
+          // srcSet="
+          //   https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-384 1x,
+          //   https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-768 2x
+          // "
+          src="https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-768"
+        />
+      </figure>
+      <div className="mt-4">
+        <div className="text-center">
+          <a
+            // href="https://www.interiorcompany.com/in/interior-design-ideas/master-bedroom/-modern-master-bedroom-design-with-teal-blue-wall-and-wooden-bed-br-pid-6218"
+            className="text-blue-600 hover:underline"
+          >
+            <h2 className="text-xl font-semibold text-gray-900">
+              Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed
+            </h2>
+          </a>
+        </div>
+      </div>
+    </div>
+    {/* third */}
+     {/* first image`` */}
+<div className="p-4 max-w-xs mx-auto">
+      <figure className="relative overflow-hidden rounded-lg">
+        <img
+          alt="Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed"
+          title="Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed"
+          loading="lazy"
+          width="368"
+          height="300"
+          className="w-full h-auto object-cover"
+          // srcSet="
+          //   https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-384 1x,
+          //   https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-768 2x
+          // "
+          src="https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-768"
+        />
+      </figure>
+      <div className="mt-4">
+        <div className="text-center">
+          <a
+            // href="https://www.interiorcompany.com/in/interior-design-ideas/master-bedroom/-modern-master-bedroom-design-with-teal-blue-wall-and-wooden-bed-br-pid-6218"
+            className="text-blue-600 hover:underline"
+          >
+            <h2 className="text-xl font-semibold text-gray-900">
+              Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed
+            </h2>
+          </a>
+        </div>
+      </div>
+    </div>
+    {/* fourth */}
+     {/* first image`` */}
+<div className="p-4 max-w-xs mx-auto">
+      <figure className="relative overflow-hidden rounded-lg">
+        <img
+          alt="Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed"
+          title="Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed"
+          loading="lazy"
+          width="368"
+          height="300"
+          className="w-full h-auto object-cover"
+          // srcSet="
+          //   https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-384 1x,
+          //   https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-768 2x
+          // "
+          src="https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-768"
+        />
+      </figure>
+      <div className="mt-4">
+        <div className="text-center">
+          <a
+            // href="https://www.interiorcompany.com/in/interior-design-ideas/master-bedroom/-modern-master-bedroom-design-with-teal-blue-wall-and-wooden-bed-br-pid-6218"
+            className="text-blue-600 hover:underline"
+          >
+            <h2 className="text-xl font-semibold text-gray-900">
+              Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed
+            </h2>
+          </a>
+        </div>
+      </div>
+    </div>
+    {/* fifth */}
+     {/* first image`` */}
+<div className="p-4 max-w-xs mx-auto">
+      <figure className="relative overflow-hidden rounded-lg">
+        <img
+          alt="Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed"
+          title="Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed"
+          loading="lazy"
+          width="368"
+          height="300"
+          className="w-full h-auto object-cover"
+          // srcSet="
+          //   https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-384 1x,
+          //   https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-768 2x
+          // "
+          src="https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-768"
+        />
+      </figure>
+      <div className="mt-4">
+        <div className="text-center">
+          <a
+            // href="https://www.interiorcompany.com/in/interior-design-ideas/master-bedroom/-modern-master-bedroom-design-with-teal-blue-wall-and-wooden-bed-br-pid-6218"
+            className="text-blue-600 hover:underline"
+          >
+            <h2 className="text-xl font-semibold text-gray-900">
+              Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed
+            </h2>
+          </a>
+        </div>
+      </div>
+    </div>
+    {/* sisxth */}
+     {/* first image`` */}
+<div className="p-4 max-w-xs mx-auto">
+      <figure className="relative overflow-hidden rounded-lg">
+        <img
+          alt="Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed"
+          title="Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed"
+          loading="lazy"
+          width="368"
+          height="300"
+          className="w-full h-auto object-cover"
+          // srcSet="
+          //   https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-384 1x,
+          //   https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-768 2x
+          // "
+          src="https://img.interiorcompany.com/interior/webproduct/509638580099624647332.png?aio=w-768"
+        />
+      </figure>
+      <div className="mt-4">
+        <div className="text-center">
+          <a
+            // href="https://www.interiorcompany.com/in/interior-design-ideas/master-bedroom/-modern-master-bedroom-design-with-teal-blue-wall-and-wooden-bed-br-pid-6218"
+            className="text-blue-600 hover:underline"
+          >
+            <h2 className="text-xl font-semibold text-gray-900">
+              Modern Master Bedroom Design With Teal Blue Wall And Wooden Bed
+            </h2>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
     </section>
   );
 };
