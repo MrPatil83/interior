@@ -294,7 +294,7 @@ const Navbar = ({ navbarBg }) => {
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
-                    <Link to="/portfolio/kitchen" onClick={handleLinkClick}>
+                    <Link to="/KitchenPages" onClick={handleLinkClick}>
                     Modern kitchen
                     </Link>
                   </li>

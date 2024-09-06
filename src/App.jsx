@@ -14,6 +14,7 @@ import Bathroom from "./components/Portfolio/Bathroom";
 import Classroom from "./components/Portfolio/Classroom";
 import BedroomPage from "./pages/BedroomPage";
 import { Bedroom } from "./components/Portfolio/Bedroom";
+import KitchenPages from "./pages/KitchenPages";
 // import Contact from "./pages/Contact";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/bedroomPage" element={<BedroomPage />} />
+        <Route path="/kitchenPages" element={<KitchenPages />} />
         <Route path="/portfolio/office" element={<Office/>} />
         <Route path="/portfolio/house" element={<House/>} />
         <Route path="/portfolio/appartment" element={<Appartment/>} />
