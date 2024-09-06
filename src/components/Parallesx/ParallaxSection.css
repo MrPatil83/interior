@@ -54,7 +54,7 @@
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   .parallax-bg, .parallax-bgsecond {
-    background-attachment: ""; /* Disables parallax effect */
+    background-attachment: scroll; /* Disables parallax effect */
     background-position: center;
     background-size: cover; /* Ensures the image scales properly */
     background-repeat: no-repeat;
