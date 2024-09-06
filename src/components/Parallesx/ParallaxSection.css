@@ -1,4 +1,32 @@
-/* ParallaxSection.css */
+@REM /* ParallaxSection.css */
+@REM .parallax-bg {
+@REM   position: relative;
+@REM   height: 100vh;
+@REM   background-image: url('../../assests//Kitchen//Parallex//kitchenparallex.jpg'); /* Replace with your image URL */
+@REM   background-attachment: fixed;
+@REM   background-position: center;
+@REM   background-repeat: no-repeat;
+@REM   background-size: cover;
+@REM   transform: translateZ(10);
+@REM   z-index: -1;
+@REM }.parallax-bgsecond{
+@REM   position: relative;
+@REM   height: 100vh;
+@REM   background-image: url('../../assests//Kitchen//Parallex/parallex2webp.webp'); /* Replace with your image URL */
+@REM   background-attachment: fixed;
+@REM   background-position: center;
+@REM   background-repeat: no-repeat;
+@REM   background-size: cover;
+@REM   transform: translateZ(10);
+@REM   z-index: -1;
+@REM }
+
+@REM .parallax-bg h1 {
+@REM   position: relative;
+@REM   z-index: 1;
+@REM }
+
+/* Default Parallax for Desktop */
 .parallax-bg {
   position: relative;
   height: 100vh;
@@ -9,7 +37,9 @@
   background-size: cover;
   transform: translateZ(10);
   z-index: -1;
-}.parallax-bgsecond{
+}
+
+.parallax-bgsecond {
   position: relative;
   height: 100vh;
   background-image: url('../../assests//Kitchen//Parallex/parallex2webp.webp'); /* Replace with your image URL */
@@ -21,7 +51,13 @@
   z-index: -1;
 }
 
-.parallax-bg h1 {
-  position: relative;
-  z-index: 1;
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .parallax-bg, .parallax-bgsecond {
+    background-attachment: scroll; /* Disables parallax effect */
+    background-position: center;
+    background-size: cover; /* Ensures the image scales properly */
+    background-repeat: no-repeat;
+    height: 60vh; /* Adjust the height for smaller screens */
+  }
 }

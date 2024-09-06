@@ -46,16 +46,16 @@
 //           </Link>
 //         </div>
 //         <div className="hidden lg:flex mr-20 items-center space-x-6">
-//             <Link 
-//                 to="/" 
+//             <Link
+//                 to="/"
 //                 className="relative text-primary group hover:text-secondary transition-colors duration-300"
 //             >
 //                 <span className="group-hover:before:scale-x-100 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-zinc-400 before:scale-x-0 before:origin-left before:transition-transform before:duration-700 before:ease-in-out">
 //                 Home
 //                 </span>
 //             </Link>
-//             <Link 
-//                 to="/aboutus" 
+//             <Link
+//                 to="/aboutus"
 //                 className="relative text-primary group hover:text-secondary transition-colors duration-300"
 //             >
 //                 <span className="group-hover:before:scale-x-100 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-zinc-400  before:scale-x-0 before:origin-left before:transition-transform before:duration-700 before:ease-in-out">
@@ -113,15 +113,15 @@
 //               </div>
 //             )}
 //           </div>
-//             <Link 
-//                 to="/contact" 
+//             <Link
+//                 to="/contact"
 //                 className="relative text-primary group hover:text-secondary transition-colors duration-300"
 //             >
 //                 <span className="group-hover:before:scale-x-100 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-zinc-400  before:scale-x-0 before:origin-left before:transition-transform before:duration-700 before:ease-in-out">
 //                 Contact Us
 //                 </span>
 //             </Link>
-//         </div> 
+//         </div>
 //         <div className="flex items-center">
 //           <button className="border poppins-regular border-[#ffff] text-sm bg-primary hidden lg:block text-black w-[8rem] h-[3rem] rounded-[1.5rem] cursor-pointer hover:text-white hover:bg-zinc-400 hover:scale-110 transition-transform duration-700">
 //             GET A QUOTE
@@ -182,21 +182,21 @@
 //             className="block px-4 py-4 text-primary hover:text-[#f5ce02]"
 //           >
 //             About Us
-//           </Link> 
+//           </Link>
 //           <Link
 //             to="/service"
 //             onClick={handleLinkClick}
 //             className="block px-4 py-4 text-primary hover:text-[#f5ce02]"
 //           >
 //             Portfolio
-//           </Link> 
+//           </Link>
 //           <Link
 //             to="/contact"
 //             onClick={handleLinkClick}
 //             className="block px-4 py-4 text-primary hover:text-[#f5ce02]"
 //           >
 //             Contact Us
-//           </Link> 
+//           </Link>
 //         </div>
 //       )}
 //     </nav>
@@ -273,14 +273,14 @@ const Navbar = ({ navbarBg }) => {
             {isPortfolioOpen && (
               <div className="absolute -left-6 justify-center flex -mt-2 w-48 py-2 bg-stone-900 text-primary shadow-lg rounded-2xl z-10">
                 <ul className=" flex flex-col">
-                <li className="hover:bg-slate-700 p-2 rounded-2xl">
+                  <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/house" onClick={handleLinkClick}>
                       Modern House
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/office" onClick={handleLinkClick}>
-                    Modern Office
+                      Modern Office
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
@@ -289,33 +289,33 @@ const Navbar = ({ navbarBg }) => {
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
-                    <Link to="/bedroomPage" onClick={handleLinkClick}>
+                    <Link to="/bedroomPages" onClick={handleLinkClick}>
                       Bedroom Area
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/KitchenPages" onClick={handleLinkClick}>
-                    Modern kitchen
+                      Modern kitchen
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/living" onClick={handleLinkClick}>
-                    Modern Living Area
+                      Modern Living Area
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/cafeResturant" onClick={handleLinkClick}>
-                    Modern Cafe/Resturant
+                      Modern Cafe/Resturant
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/bathroom" onClick={handleLinkClick}>
-                    Modern Bathroom 
+                      Modern Bathroom
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/classroom" onClick={handleLinkClick}>
-                    Modern Classroom 
+                      Modern Classroom
                     </Link>
                   </li>
                 </ul>
@@ -402,14 +402,14 @@ const Navbar = ({ navbarBg }) => {
             {isPortfolioOpen && (
               <div className="flex flex-col space-y-1">
                 <ul className=" bg-stone-900 bg-opacity-50 text-slate-400 rounded-2xl shadow-lg py-2 px-4">
-                <li className="hover:bg-slate-700 p-2 rounded-2xl">
+                  <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/house" onClick={handleLinkClick}>
                       Modern House
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/office" onClick={handleLinkClick}>
-                    Modern Office
+                      Modern Office
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
@@ -418,33 +418,33 @@ const Navbar = ({ navbarBg }) => {
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
-                    <Link to="/bedroomPage" onClick={handleLinkClick}>
+                    <Link to="/bedroomPages" onClick={handleLinkClick}>
                       Bedroom Area
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
-                    <Link to="/portfolio/kitchen" onClick={handleLinkClick}>
-                    Modern kitchen
+                    <Link to="/kitchenPages" onClick={handleLinkClick}>
+                      Modern kitchen
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/living" onClick={handleLinkClick}>
-                    Modern Living Area
+                      Modern Living Area
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/cafeResturant" onClick={handleLinkClick}>
-                    Modern Cafe/Resturant
+                      Modern Cafe/Resturant
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/bathroom" onClick={handleLinkClick}>
-                    Modern Bathroom 
+                      Modern Bathroom
                     </Link>
                   </li>
                   <li className="hover:bg-slate-700 p-2 rounded-2xl">
                     <Link to="/classroom" onClick={handleLinkClick}>
-                    Modern Classroom 
+                      Modern Classroom
                     </Link>
                   </li>
                 </ul>

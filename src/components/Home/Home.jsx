@@ -204,16 +204,16 @@
 //               GET A QUOTE
 //             </motion.button>
 //           </motion.div>
-      //   </div>
-      //   <motion.img
-      //     variants={FadeLeft(0.3)}
-      //     initial="hidden"
-      //     whileInView={"visible"}
-      //     className=" h-[26rem] w-[20rem] -mt-24  rounded-3xl mx-auto md:h-[28rem] md:w-full md:mt-14 md:-mx-14 lg:h-[40rem] lg:w-[30rem] flex lg:-mx-10"
-      //     src={Tallimge}
-      //     alt=""
-      //   ></motion.img>
-      // </div>
+//   </div>
+//   <motion.img
+//     variants={FadeLeft(0.3)}
+//     initial="hidden"
+//     whileInView={"visible"}
+//     className=" h-[26rem] w-[20rem] -mt-24  rounded-3xl mx-auto md:h-[28rem] md:w-full md:mt-14 md:-mx-14 lg:h-[40rem] lg:w-[30rem] flex lg:-mx-10"
+//     src={Tallimge}
+//     alt=""
+//   ></motion.img>
+// </div>
 
 //       {/* third part  */}
 //       <section className=" flex flex-cols-3 justify-around h-[210rem] lg:h-[73rem] mx-auto md:h-[117rem]  mt-24 bg-stone-900 rounded-se-full">
@@ -265,8 +265,8 @@
 
 // export default Home;
 
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import HomeImage from "../../assests/HomeCarosulImage/HomeImage.png";
 import sofa from "../../assests/HeroImages/sofa.jpg";
 import bedroom from "../../assests/HeroImages/bedroom.png";
@@ -299,10 +299,10 @@ const Home = () => {
 
     updateImage();
 
-    window.addEventListener('resize', updateImage);
+    window.addEventListener("resize", updateImage);
 
     return () => {
-      window.removeEventListener('resize', updateImage);
+      window.removeEventListener("resize", updateImage);
     };
   }, []);
 
@@ -327,14 +327,14 @@ const Home = () => {
       title: "Bedroomarea",
       imgSrc: bedroomarea,
       alt: "bedroomarea image",
-      link: "/portfolio/bedroomarea", // Updated link
+      link: "/bedroomPages", // Updated link
     },
     {
       id: 4,
       title: "Kitchen",
       imgSrc: kitchen,
       alt: "kitchen image",
-      link: "/portfolio/kitchen", // Updated link
+      link: "/kitchenPages", // Updated link
     },
     {
       id: 5,
@@ -463,14 +463,12 @@ const Home = () => {
               timeless decor. Explore modern home interior design ideas and
               luxury living room decor tips to create serene and stylish spaces.
             </motion.p>
-            <motion.button
-              className="text-sm poppins-regular h-[2.9rem] w-[8rem] items-center rounded-[2rem] flex m-2 mx-auto ml-9 md:h-[2.5rem] md:w-[7rem] md:mx-auto md:ml-[3.4rem] lg:h-[2.5rem] lg:w-[7rem] lg:ml-[6rem] xl:ml-[10rem] justify-center border border-black hover:text-white hover:bg-zinc-400 hover:scale-110 transition-transform duration-700"
-            >
+            <motion.button className="text-sm poppins-regular h-[2.9rem] w-[8rem] items-center rounded-[2rem] flex m-2 mx-auto ml-9 md:h-[2.5rem] md:w-[7rem] md:mx-auto md:ml-[3.4rem] lg:h-[2.5rem] lg:w-[7rem] lg:ml-[6rem] xl:ml-[10rem] justify-center border border-black hover:text-white hover:bg-zinc-400 hover:scale-110 transition-transform duration-700">
               GET A QUOTE
             </motion.button>
           </motion.div>
         </div>
-      
+
         <motion.img
           variants={FadeLeft(0.3)}
           initial="hidden"
@@ -479,7 +477,6 @@ const Home = () => {
           src={Tallimge}
           alt=""
         ></motion.img>
-      
       </div>
 
       {/* Third part */}
